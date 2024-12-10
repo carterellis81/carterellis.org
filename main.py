@@ -5,7 +5,11 @@ from flask import render_template
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
+def landing_page():
     return render_template('index.html')
 
-serve(app, port=8080)
+@app.route('/christmas')
+def wish_list():
+    return render_template('wish_list.html')
+
+serve(app, port=5000)
