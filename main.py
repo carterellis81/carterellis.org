@@ -10,6 +10,6 @@ def landing_page():
 
 @app.route('/christmas')
 def wish_list():
-    return render_template('wish_list.html')
+    return render_template('wishlist.html')
 
 serve(app, port=5000)
