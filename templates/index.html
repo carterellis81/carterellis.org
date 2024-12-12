@@ -7,33 +7,28 @@
     <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/thumbsup.png')}}">
     <link rel="stylesheet", href="{{url_for('static', filename='styles/style.css')}}" />
     <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet" />  
-    <link rel="apple-touch-icon" href="{{url_for('static', filename='images/thumbsup.png')}}">
+    <meta property="og:image" content="{{url_for('static', filename='images/thumbsup.png')}}" />
+    <meta property="og:title" content="Carter Ellis' personal site!" />
+    <script>
+      let imageList = [
+        "{{url_for('static', filename='images/thumbsup.png')}}",
+        "{{url_for('static', filename='images/socialcredit.jpg')}}"
+      ]
+    </script>
   </head>
   <body>
     <h1>
       CARTERELLIS.ORG
     </h1>
-    <img src="{{url_for('static', filename='images/thumbsup.png')}}" alt="My test image" width="300" height="300" />
-    <script>
-
-      const myImage = document.querySelector("img");
-
-      myImage.onclick = () => {
-      const mySrc = myImage.getAttribute("src");
-      if (mySrc === "{{url_for('static', filename='images/thumbsup.png')}}") {
-        myImage.setAttribute("src", "{{url_for('static', filename='images/socialcredit.jpg')}}");
-      } else {
-        myImage.setAttribute("src", "{{url_for('static', filename='images/thumbsup.png')}}");
-       }
-      };
-
-    </script>
+    <img src="{{url_for('static', filename='images/thumbsup.png')}}" alt="an emoji guy with sunglasses and a thumbs up" width="300" height="300" />
+    <script src="{{url_for('static', filename='scripts/main.js')}}"></script>
   </body>
   <p>
     welcome to my site! here are the things you can see here:
   </p>
   <ul>
-    <li>  <a href="https://cisc106.carterellis.org">CARTERELLIS.COM</a>: my CISC106 final project website  </li>
-    <li>I also host a minecraft server at <a href="https://wiki.fabricmc.net/install">minecraft.carterellis.org</a></li>
+    <li>  <a href="https://cisc106.carterellis.org" title="link to 'CARTERELLIS.COM'!">CARTERELLIS.COM</a>: my CISC106 final project website  </li>
+    <li>I also host a minecraft server at <a href="https://wiki.fabricmc.net/install" title="you need to install 'Modflared' to join the server">
+      minecraft.carterellis.org</a></li>
   </ul>
 </html>
