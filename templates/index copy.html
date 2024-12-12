@@ -13,7 +13,10 @@
     <h1>
       CARTERELLIS.ORG
     </h1>
-    <img src="{{url_for('static', filename='images/thumbsup.png')}}" alt="My test image" width="300" height="300" />
+    <img src="{{url_for('static', filename='images/thumbsup.png')}}" alt="My test image" />
+    <button>
+      Change user!
+    </button>
     <script>
 
       const myImage = document.querySelector("img");
@@ -27,6 +30,31 @@
        }
       };
 
+      let myButton = document.querySelector("button");
+      let myHeading = document.querySelector("h1");
+      function setUserName() {
+        const myName = prompt("Please enter your name.");
+        if (!myName) {
+          setUserName();
+        } else {
+          localStorage.setItem("name", myName);
+          myHeading.textContent = `Welcome to my site, ${myName}`;
+        }
+      }
+
+
+      if (!localStorage.getItem("name")) {
+        setUserName();
+      } else {
+        const storedName = localStorage.getItem("name");              
+        myHeading.textContent = `Welcome, ${storedName}`;
+      
+      }
+
+      myButton.onclick = () => {
+        setUserName();
+      };
+
     </script>
   </body>
   <p>
@@ -34,6 +62,6 @@
   </p>
   <ul>
     <li>  <a href="https://cisc106.carterellis.org">CARTERELLIS.COM</a>: my CISC106 final project website  </li>
-    <li>I also host a minecraft server at <a href="https://wiki.fabricmc.net/install">minecraft.carterellis.org</a></li>
+    <li>  <a href="http://carterellis.org/christmas">Christmas wish list</a> for anyone who might be generous  </li>
   </ul>
 </html>
