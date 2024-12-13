@@ -33,13 +33,14 @@ main {
     display: grid;
     height: 10vh;
     width: 100%;
-    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr 3fr 3fr 3fr 3fr;
   }
 
 #OPTIONBUTTON {
     text-align: center;
     vertical-align: middle;
     line-height: 10vh;
+    white-space: nowrap;
 }
 
 .topoption {
