@@ -1,0 +1,80 @@
+html {
+    color: white;
+    font-size: 2dvh;
+    background: rgb(24,24,110);
+    font-family: "Oswald", sans-serif;
+  }
+
+body,
+main {
+    box-sizing: border-box;
+    max-width: 100dvw;
+    margin: 0px;
+    padding: 0px;
+}
+
+#LANDING {
+    display: grid;
+    grid-template-rows: 15vh 85vh;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 27%, rgba(24,24,87,1) 70%, rgba(24,24,165,1) 100%);
+} 
+
+#TITLE {    
+    width: 100%;
+    text-align: center;
+    line-height: 60vh;
+}
+
+#HEADWRAPPER {
+    display: grid;
+    height: 10vh;
+    width: 100%;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+  }
+
+#OPTIONBUTTON {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh;
+}
+
+.topoption {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh;
+}  
+
+#DIV2 {
+    box-sizing: border-box;
+    text-align: center;
+    height: 50em;
+    width: 100%;
+    border: 0px;
+    background: rgb(37,94,102);
+    background: linear-gradient(336deg, rgba(37,94,102,1) 18%, rgba(49,20,123,1) 61%, rgba(68,19,78,1) 100%); 
+}
+
+#BANNER {
+    height: 2.5em;
+    width: 100%;
+    text-align: center;
+    line-height: 2.5em;
+    font-size: 5dvh;
+    background: rgb(89,37,102);
+    background: linear-gradient(55deg, rgba(89,37,102,1) 18%, rgba(48,20,123,1) 61%, rgba(58,10,33,1) 100%); 
+}
+
+h1 {
+    font-family: "Oswald";
+    font-size: 12dvh;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: inherit;
+}

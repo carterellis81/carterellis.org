@@ -1,34 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>CARTERELLIS.ORG</title>
-    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/thumbsup.png')}}">
-    <link rel="stylesheet", href="{{url_for('static', filename='styles/style.css')}}" />
-    <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet" />  
-    <meta property="og:image" content="{{url_for('static', filename='images/thumbsup.png')}}" />
-    <meta property="og:title" content="Carter Ellis' personal site!" />
-    <script>
-      let imageList = [
-        "{{url_for('static', filename='images/thumbsup.png')}}",
-        "{{url_for('static', filename='images/socialcredit.jpg')}}"
-      ]
-    </script>
-  </head>
-  <body>
-    <h1>
-      CARTERELLIS.ORG
-    </h1>
-    <img src="{{url_for('static', filename='images/thumbsup.png')}}" alt="an emoji guy with sunglasses and a thumbs up" width="300" height="300" />
-    <script src="{{url_for('static', filename='scripts/main.js')}}"></script>
-  </body>
-  <p>
-    welcome to my site! here are the things you can see here:
-  </p>
-  <ul>
-    <li>  <a href="https://cisc106.carterellis.org" title="link to 'CARTERELLIS.COM'!">CARTERELLIS.COM</a>: my CISC106 final project website  </li>
-    <li>I also host a minecraft server at <a href="https://wiki.fabricmc.net/install" title="you need to install 'Modflared' to join the server">
-      minecraft.carterellis.org</a></li>
-  </ul>
+    <head>
+        <!-- metadata -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>CARTERELLIS.ORG</title>
+        <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/thumbsup.png')}}">
+        <link rel="stylesheet", href="static/styles/index.css" />
+
+        <!-- fonts from google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet" />  
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond" rel="stylesheet">
+
+        <!-- attempt at apple metadata -->
+        <meta property="og:image" content="static/images/thumbsup.png" />
+        <meta property="og:title" content="Carter Ellis' personal site!" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="500" />
+
+        <!-- importing scripts -->
+        <script src="{{url_for('static', filename='scripts/index.js')}}" defer></script> 
+    </head>
+    <body>
+        <div id="LANDING">
+            <div id="HEADWRAPPER">
+                <div id="OPTIONBUTTON">show links</div>
+                <div class="topoption"><a href="https://cisc106.carterellis.org">CISC106</a></div>
+                <div class="topoption"><a href="https://carterellis.org/christmas">wishlist</a></div>
+                <div class="topoption"><a href="https://carterellis.org/oldhome">old homepage</a></div>
+                <div class="topoption"><a href="https://modrinth.com/mod/modflared">minecraft</a></div>
+            </div>
+            <div id="TITLE">
+                <h1> carter ellis </h1>
+            </div>
+        </div>
+        <div id="BANNER">
+            welcome to carterellis.org
+        </div>
+    </body>
 </html>
