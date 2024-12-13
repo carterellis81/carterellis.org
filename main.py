@@ -12,4 +12,8 @@ def landing_page():
 def wish_list():
     return render_template('wishlist.html')
 
+@app.route('/oldhome')
+def old_home():
+    return render_template('oldindex.html')
+
 serve(app, port=5000)
