@@ -1,62 +1,56 @@
 html {
     color: white;
     font-size: 2dvh;
-    background: rgb(24,24,110);
+    background: rgb(51,114,42);
     font-family: "Oswald", sans-serif;
   }
 
 body,
 main {
-    box-sizing: border-box;
     max-width: 100dvw;
     margin: 0px;
     padding: 0px;
 }
 
-#LANDING {
-    display: grid;
-    grid-template-rows: 15vh 85vh;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 27%, rgba(24,24,87,1) 70%, rgba(24,24,165,1) 100%);
-} 
-
 #TITLE {    
     width: 100%;
+    height: 100dvh;
+    display: grid;
+    align-content: center;
     text-align: center;
-    line-height: 60vh;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 27%, rgba(24,24,87,1) 70%, rgba(24,24,165,1) 100%);
+    margin-top: -10dvh;
 }
 
 #HEADWRAPPER {
-    display: grid;
+    text-align: center;
     height: 10vh;
     width: 100%;
-    grid-template-columns: 2fr 3fr 3fr 3fr 3fr;
+    position: sticky;
+    top: 0;
   }
 
-#OPTIONBUTTON {
-    text-align: center;
-    vertical-align: middle;
-    line-height: 10vh;
-    white-space: nowrap;
-}
-
-.topoption {
-    text-align: center;
-    vertical-align: middle;
-    line-height: 10vh;
+#HEADEROPTIONS {
+    display: flex;
+    height: 5dvh;
+    background: rgb(51,114,42);
+    background: linear-gradient(31deg, rgba(51,114,42,1) 2%, rgba(123,111,20,1) 51%, rgba(78,19,23,1) 100%); 
+    border-radius: 0 0 2dvh 2dvh;   
+    z-index: 3; 
 }  
 
-#DIV2 {
-    box-sizing: border-box;
-    text-align: center;
-    height: 50em;
-    width: 100%;
-    border: 0px;
-    background: rgb(37,94,102);
-    background: linear-gradient(336deg, rgba(37,94,102,1) 18%, rgba(49,20,123,1) 61%, rgba(68,19,78,1) 100%); 
+.headeroption {
+    flex: 3;
+    height: 100%;
+    border-radius: 0 0 2dvh 2dvh;   
+    display: grid;
+    align-content: center;
+}
+
+.headeroption:hover {   
+    background: rgb(251,103,63);
+    background: radial-gradient(circle, rgba(251,103,63,1) 0%, rgba(173,70,252,1) 100%); 
 }
 
 #BANNER {
@@ -78,4 +72,30 @@ h1 {
 
 a {
     color: inherit;
+    text-decoration: none;
+}
+
+#DIV2 {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 30vh auto;
+    grid-template-areas: "header"
+                            ".";
+    height: 100em;
+    width: 100%;
+    border: 0px;
+    background: rgb(37,94,102);
+    background: linear-gradient(336deg, rgba(37,94,102,1) 18%, rgba(49,20,123,1) 61%, rgba(68,19,78,1) 100%); 
+}
+
+.sidepanel {
+    text-align: center;
+    height: 25vh;
+    width: 25vw;
+    color: blue;
+    background-color: gray;
+    margin: 50px;
+    float: right;
+    position: sticky;
+    top: 0;
 }
