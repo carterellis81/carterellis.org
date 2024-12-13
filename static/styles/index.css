@@ -64,14 +64,14 @@ main {
     width: 100%;
     text-align: center;
     line-height: 2.5em;
-    font-size: 5dvh;
+    font-size: 3.5dvh;
     background: rgb(89,37,102);
     background: linear-gradient(55deg, rgba(89,37,102,1) 18%, rgba(48,20,123,1) 61%, rgba(58,10,33,1) 100%); 
 }
 
 h1 {
     font-family: "Oswald";
-    font-size: 12dvh;
+    font-size: 10dvh;
     margin: 0px;
     padding: 0px;
 }
