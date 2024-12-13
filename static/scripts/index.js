@@ -14,7 +14,7 @@ const textSplashes = [
 window.addEventListener('load', (event) => {
     let num = getRandomInt(0, Math.ceil(textSplashes.length * 1.3));
     if (num <= (textSplashes.length - 1)) {
-        title.innerHTML = "<h1> carter ellis: <span style='color: red;'>" + textSplashes[num] + "</span> </h1>";
+        title.innerHTML = "<h1> carter ellis: <span style='color: rgb(168, 25, 25);'>" + textSplashes[num] + "</span> </h1>";
     }
     else {
         title.innerHTML = "<h1> carter ellis </h1>";
