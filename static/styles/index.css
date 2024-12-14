@@ -24,16 +24,16 @@ main {
 
 header {
     text-align: center;
-    height: 2em;
+    height: 2.5rem;
     width: 100%;
     position: sticky;
     top: 0;
-    margin-bottom: -2em;
+    margin-bottom: -2.5rem;
   }
 
 #HEADEROPTIONS {
     display: flex;
-    height: 5lvh;
+    height: 2.5rem;
     background: #292933;
     z-index: 10; 
     border-bottom-style: solid;
@@ -162,7 +162,7 @@ aside {
     }
     
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     main {
@@ -184,12 +184,16 @@ aside {
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
 
 @media screen and (min-width: 1000px) {
     html {
         font-size: 20px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
     }
 }
