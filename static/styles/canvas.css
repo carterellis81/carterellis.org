@@ -1,0 +1,83 @@
+html,
+body {
+    color: antiquewhite;
+    background: #292933;
+    font-family: "Oswald", sans-serif;
+    overflow: hidden;
+  }
+
+body,
+main {
+    min-width: 320px;
+    max-width: 100dvw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    text-align: center;
+    height: 2.5rem;
+    width: 5rem;
+    position: sticky;
+    top: 0;
+    margin-bottom: -4.5rem;
+    padding: 1rem;
+  }
+  
+.headeroption {
+    box-sizing: border-box;
+    flex: 3;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: antiquewhite;
+    border-radius: 0.3rem;
+    background: #292933;
+}
+
+.headeroption:hover {   
+    background: rgb(251,163,63);
+    background: linear-gradient(58deg, rgba(251,163,63,1) 0%, rgba(70,172,252,1) 100%); 
+}
+
+#HEADEROPTIONS > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#HEADEROPTIONS > a:hover {
+    text-decoration: underline;
+}
+
+canvas {
+    background: #111114;
+    height: 100% - 10rem;
+    width: 100%;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+@media screen and (0px <= width <= 599px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (600px <= width <= 999px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 20px;
+    }
+}
