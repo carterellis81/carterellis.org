@@ -7,7 +7,7 @@ html {
 body,
 main {
     min-width: 320px;
-    max-width: 100dvw;
+    max-width: 100lvw;
     margin: 0px;
     padding: 0px;
 }

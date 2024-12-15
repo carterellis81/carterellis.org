@@ -16,4 +16,8 @@ def wish_list():
 def old_home():
     return render_template('oldindex.html')
 
+@app.route('/canvas')
+def canvas():
+    return render_template('canvas.html')
+
 serve(app, port=5000)
