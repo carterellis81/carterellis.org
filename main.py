@@ -16,7 +16,7 @@ def wish_list():
 def old_home():
     return render_template('oldindex.html')
 
-@app.route('/canvas')
+@app.route('/seizure')
 def canvas():
     return render_template('canvas.html')
 
