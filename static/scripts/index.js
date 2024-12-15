@@ -25,7 +25,7 @@ const textSplashes = [
     "i dunno, but alaska",
     "in my brainrot era",
     "might win a grammy",
-    "this hawk big enough for the tuah us",
+    "this hawk ain't big enough for the tuah us",
     "4am essay writer",
     "sponsored by RTX<sup>tm</sup>",
     "god bless you with mountains of gold and silver",
@@ -228,7 +228,18 @@ const textSplashes = [
     "there's no way a seal killed bin laden",
     "did i just write the song of the summer?",
     "what should i feed my horse?",
-    "four dudes finger foods"
+    "four dudes finger foods",
+    "five hundred cigarettes",
+    "three hundred billion dead carps",
+    "riots all around you",
+    "to ashes and blood",
+    "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||</br></br>||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| _",
+    "fourth place at the world yodeling championship 2013",
+    "tonight tastes like one million beers",
+    "also known as ea-nasir",
+    "no refunds",
+    "call me Thomas Edison the way i do things crazy enough to shock an elephant to death",
+    "who up wonking they willy rn"
 ];
 
 window.addEventListener('load', changeTextSplash);
