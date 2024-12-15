@@ -18,6 +18,7 @@ main {
     display: grid;
     align-content: center;
     text-align: center;
+    text-wrap: balance;
     background: rgb(251,230,63);
     background: linear-gradient(54deg, rgba(251,230,63,0.5644258045014881) 0%, rgba(173,70,252,1) 100%); 
 }
