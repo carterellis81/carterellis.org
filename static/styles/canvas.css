@@ -55,7 +55,7 @@ header {
 
 canvas {
     background: #111114;
-    height: 100% - 10rem;
+    height: 100%;
     width: 100%;
     margin: 0;
 }
