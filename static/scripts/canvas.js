@@ -64,15 +64,15 @@ class Ball {
 
 const balls = [];
 
-while (balls.length < 250) {
+while (balls.length < 400) {
   const size = random(10, 20);
   const ball = new Ball(
     // ball position always drawn at least one ball width
     // away from the edge of the canvas, to avoid drawing errors
     random(0 + size, width - size),
     random(0 + size, height - size),
-    random(-7, 7),
-    random(-7, 7),
+    random(-25, 25),
+    random(-25, 25),
     randomRGB(),
     size,
   );
@@ -81,7 +81,7 @@ while (balls.length < 250) {
 }
 
 function loop() {
-  ctx.fillStyle = "rgb(0 0 0 / 25%)";
+  ctx.fillStyle = "rgb(0 0 0 / 15%)";
   ctx.fillRect(0, 0, width, height);
   
   for (const ball of balls) {

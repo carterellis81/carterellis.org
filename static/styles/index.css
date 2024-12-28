@@ -1,5 +1,5 @@
 html {
-    color: antiquewhite;
+    color: #fefefe;
     background: #292933;
     font-family: "Oswald", sans-serif;
   }
@@ -34,13 +34,27 @@ header {
 
 #HEADEROPTIONS {
     display: flex;
-    height: 2.5rem;
+    height: 3rem;
     background: #292933;
     z-index: 10; 
     border-bottom-style: solid;
     border-bottom-width: 3px;
-    border-color: antiquewhite;
+    border-color: #fefefe;
 }  
+
+.headerlogo {
+    flex: 1.2;
+    min-width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerlogo > img {
+    padding: 0px;
+    margin: 0px;
+    height: 90%;
+}
 
 .headeroption {
     flex: 3;
@@ -51,7 +65,7 @@ header {
 
 .headeroption:hover {   
     background: rgb(251,163,63);
-    background: linear-gradient(58deg, rgba(251,163,63,1) 0%, rgba(70,172,252,1) 100%); 
+    background: linear-gradient(58deg, rgba(251,163,63,0.7) 0%, rgba(70,172,252,0.7) 100%); 
 }
 
 #BANNER {
@@ -67,7 +81,7 @@ header {
     border-bottom-style: solid;
     border-top-width: 3px;
     border-bottom-width: 3px;
-    border-color: antiquewhite;
+    border-color: #fefefe;
 }
 
 h1 {
@@ -84,6 +98,8 @@ h1 {
 
 #HEADEROPTIONS > a:hover {
     text-decoration: underline;
+    text-decoration-color: #8cb4ff;
+    text-decoration-thickness: 0.2rem;
 }
 
 main {
@@ -105,7 +121,7 @@ footer {
     text-align: center;
     border-top-style: solid;
     border-top-width: 3px;
-    border-color: antiquewhite;
+    border-color: #fefefe;
     background: #292933;
 }
 
@@ -131,7 +147,7 @@ article {
     border-style: solid;
     border-radius: 0.2rem;
     border-width: 0.2rem;
-    border-color: antiquewhite;
+    border-color: #fefefe;
     margin: 2rem 2rem 2rem 1.4rem;
     color: #acb1b5;
 }
@@ -150,7 +166,7 @@ aside {
     border-style: solid;
     border-radius: 0.2rem;
     border-width: 0.2rem;
-    border-color: antiquewhite;
+    border-color: #fefefe;
     margin: 2rem 1.4rem 2rem 0;
     margin-left: 0;
     color: darkseagreen;
