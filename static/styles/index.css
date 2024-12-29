@@ -44,7 +44,7 @@ header {
 
 .headerlogo {
     flex: 1.2;
-    min-width: 7rem;
+    min-width: 9.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,7 +52,7 @@ header {
 
 .headerlogo > img {
     padding: 0px;
-    margin: 0px;
+    margin-left: 2rem;
     height: 90%;
 }
 
@@ -65,7 +65,12 @@ header {
 
 .headeroption:hover {   
     background: rgb(251,163,63);
-    background: linear-gradient(58deg, rgba(251,163,63,0.7) 0%, rgba(70,172,252,0.7) 100%); 
+    background: linear-gradient(58deg, rgba(251,163,63,0.75) 0%, rgba(70,172,252,0.75) 100%); 
+}
+
+.headerbuffer {
+    height: 100%;
+    width: 2.8rem;
 }
 
 #BANNER {
@@ -84,7 +89,7 @@ header {
     border-color: #fefefe;
 }
 
-h1 {
+#TITLE > h1 {
     font-family: "Oswald";
     font-size: 5rem;
     margin: 0px;
@@ -138,39 +143,57 @@ a:visited {
     color: #9c3b63;
 }
 
+#articlecontainer {
+    flex: 3;
+    margin: 2rem 2rem 2rem 1.4rem;
+}
+
 article {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    flex: 3;
-    min-height: 30rem;
+    width: 100%;
     border-style: solid;
     border-radius: 0.2rem;
     border-width: 0.2rem;
     border-color: #fefefe;
-    margin: 2rem 2rem 2rem 1.4rem;
     color: #acb1b5;
+    padding: 1rem;
+}
+
+.bodyimage {
+    float: right;
+    flex: 1;
+    width: 100%;
+    object-fit: contain;
 }
 
 aside > p,
 article > p {
-    margin: 0.8rem;
-    padding: 0;
+    padding: 0px;
+}
+
+article > h2,
+aside > h2 {
+    margin: 0px;
+}
+
+#asidecontainer {
+    flex: 1;
+    margin: 2rem 1.4rem 2rem 0;
 }
 
 aside {
+    color: #acb1b5;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    flex: 1;
     border-style: solid;
     border-radius: 0.2rem;
     border-width: 0.2rem;
     border-color: #fefefe;
-    margin: 2rem 1.4rem 2rem 0;
     margin-left: 0;
-    color: darkseagreen;
-    display: none;
+    padding: 1rem;
 }
 
 @media screen and (0px <= width <= 599px) {
@@ -178,7 +201,7 @@ aside {
         font-size: 16px;
     }
     
-    h1 {
+    #TITLE > h1 {
         font-size: 2rem;
     }
 
@@ -193,6 +216,18 @@ aside {
     article {
         margin: 0.75rem 0.4rem 0.75rem 0.4rem;
     }
+
+    .headerlogo {
+        min-width: 7rem;
+    }
+
+    .headerlogo > img {
+        margin-left: 0px;
+    }
+
+    .headerbuffer {
+        display: none;
+    }
 }
 
 @media screen and (600px <= width <= 999px) {
@@ -200,7 +235,7 @@ aside {
         font-size: 18px;
     }
 
-    h1 {
+    #TITLE > h1 {
         font-size: 3rem;
     }
 }
@@ -210,7 +245,7 @@ aside {
         font-size: 20px;
     }
 
-    h1 {
+    #TITLE > h1 {
         font-size: 3.5rem;
     }
 }

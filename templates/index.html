@@ -28,15 +28,22 @@
                 <a href="https://www.carterellis.org" class="headerlogo">
                     <img src="{{url_for('static', filename='images/cellislogo.svg')}}" alt="logo for carterellis.org"/>
                 </a>
-                <a href="oldhome" class="headeroption">
-                    old homepage
-                </a>
-                <a href="https://modrinth.com/mod/modflared" class="headeroption" target="_blank" rel="noopener noreferrer">
+                <a href="minecraft" class="headeroption">
                     minecraft
+                </a>
+                <a href="tools" class="headeroption">
+                    tools
                 </a>
                 <a href="seizure" class="headeroption">
                     epilepsy?
                 </a>
+                <a href="seizure" class="headeroption">
+                    test?
+                </a>
+                <a href="seizure" class="headeroption">
+                    test2?
+                </a>
+                <div class="headerbuffer"></div>
             </div>
         </header>
         <div id="TITLE">
@@ -46,30 +53,79 @@
             welcome to carterellis.org
         </div>
         <main>
-            <article>
-                <p>
-                    this is the personal website of me, carter ellis! 
-                    it's mostly empty right now, but here's what you can see:
-                </p>
-                <ol>
-                    <li>
-                        a link to the old homepage of the site, the day i bought the domain 
-                        (last week)
-                    </li>
-                    <li>
-                        a link to Modflared, which allows players to connect to a proxied minecraft
-                        server i host at minecraft.carterellis.org
-                    </li>
-                </ol>
-                <p>
-                    check back later for more
-                </p>
-            </article>
-            <aside>
-                <p>
-                    aside
-                </p>
-            </aside>
+            <div id="articlecontainer">
+                <article>
+                    <h2>
+                        This is the personal website of me, Carter Ellis! 
+                    </h2>
+                    <p>
+                        I am still developing this site and a few other somewhat-related things,
+                        so make sure to regulary check back here to see what's going on.
+                        Thanks for coming here in the first place, by the way.
+                        Right now, <a href="" style="text-decoration: none;">carterellis.org</a> is mostly 
+                        barren, but you can find a list of future features below:
+                    </p>
+                    <dl>
+                        <dt>
+                            the Carter Ellis Wiki
+                        </dt>
+                        <dd>
+                            a system of pages where you can find a bunch of information
+                            about a bunch of random things that I feel like including.
+                            Also potentially to be used to store files that I want to keep
+                            and don't trust Google to protect.
+                        </dd>
+                    </br>
+                        <dt>
+                            IEEE Citation Helper
+                        </dt>
+                        <dd>
+                            this is an actually useful app that is under development.
+                            IEEE citations are annoying, and my least favorite part is 
+                            having to correctly order the citations at the end of the paper,
+                            because putting them in chronological order is annoying. <a href="" style="text-decoration: none;">carterellis.org</a>
+                            will soon have a page where you can upload a PDF of a completed paper 
+                            with the citations in any order and have the site automatically
+                            order the citations page for you. 
+                        </dd>
+                    </br>
+                        <dt>
+                            Minecraft server management page
+                        </dt>
+                        <dd>
+                            I'm also developing a Docker image for running a Fabric Minecraft server
+                            that will work with Geyser and Floodgate, and this page will allow players to 
+                            connect to it by adding them to the whitelist and also contain information 
+                            about how to operate similar Minecraft servers.
+                        </dd>
+                    </br>
+                        <dt>
+                            <a href="" style="text-decoration: none;">carterellis.org</a> hosting?
+                        </dt>
+                        <dd>
+                            eventually, I want to be able to host other people's static sites 
+                            (like <a href="https://cisc106.carterellis.org" style="text-decoration: none;">
+                                my cisc106 final project</a>) through this domain. By "people" I mean 
+                            my friends so if you're interested hit me up
+                        </dd>
+                    </dl>
+                    <p>
+                        Let me know if you have any ideas for this site! 
+                        I bought this domain for seven dollars at one in the morning,
+                        so I don't exactly have an amazing idea of what to do here. Have a great day!
+                    </p>
+                </article>
+            </div>
+            <div id="asidecontainer">
+                <aside>
+                    <h2>
+                        COOL PICTURES 
+                    </h2>
+                    <img src="{{url_for('static', filename='images/thumbsup.png')}}" alt="a pretty Cool Guy" class="bodyimage"/>
+                    <img src="{{url_for('static', filename='images/socialcredit.jpg')}}" alt="social credit VERY GOOD!" class="bodyimage"/>
+                    <img src="{{url_for('static', filename='images/motorcycle.jpg')}}" alt="another Cool Guy" class="bodyimage"/>
+                </aside>
+            </div>
         </main>
         <footer>
             <p>
