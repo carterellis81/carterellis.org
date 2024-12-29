@@ -6,9 +6,11 @@
     text-align: center;
     text-wrap: balance;
     background-image: url("../images/motorcycle.jpg");
-    background-size: 100% 100lvh;
+    background-size: auto 100lvh;
     background-color: rgb(0, 0, 0, 0.35);
     background-blend-mode: overlay;
+    object-fit: cover;
+    background-position: center;
 }
 
 #banner {
@@ -28,23 +30,61 @@
 }
 
 main {
-    box-sizing: border-box;
     display: flex;
-    height: 100%;
+    flex-wrap: wrap;
     width: 100%;
     border: 0px;
     background: #111114;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    justify-content: space-between;
+}
+
+.image {
+    float: right;
+    flex: 1;
+    width: 100%;
+    object-fit: contain;
+}
+
+.imagewrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: calc(25lvw - 1rem);
+    flex-shrink: 0;
+    border-style: solid;
+    border-radius: 0.2rem;
+    border-width: 0.2rem;
+    border-color: #fefefe;
+    background: #292933;
 }
 
 @media screen and (0px <= width <= 599px) {
     #title > h1 {
         font-size: 2rem;
     }
+
+    .imagewrapper {
+        width: calc(98lvw - 1rem);
+    }
+}
+
+@media screen and (min-width: 739px) {
+    #title {
+        background-size: 100lvw auto;
+    }
 }
 
 @media screen and (600px <= width <= 999px) {
     #title > h1 {
         font-size: 3rem;
+    }
+
+    .imagewrapper {
+        width: calc(49lvw - 1rem);
     }
 }
 

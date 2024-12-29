@@ -4,8 +4,7 @@ html {
     font-family: "Oswald", sans-serif;
 }
 
-body,
-main {
+body {
     min-width: 320px;
     max-width: 100lvw;
     margin: 0px;
