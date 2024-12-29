@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width" />
     <title>carter's seizure exam</title>
     <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/thumbsup.png')}}">
-    <link rel="stylesheet" href="static/styles/canvas.css" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <!-- fonts from google fonts -->
@@ -21,16 +20,17 @@
 
     <!-- importing scripts -->
     <script src="static/scripts/canvas.js" defer></script> 
+
+    <!-- importing styles -->
+    <link rel="stylesheet" href="static/styles/canvas.css" />
   </head>
 
   <body>
     <header>        
-        <a href="../" class="headeroption">
-            home
-        </a>
+      <a href="javascript:window.history.back();" class="headeroption">
+        back
+      </a>
     </header>
     <canvas></canvas>
-
-    <script src="main.js"></script>
   </body>
 </html>
