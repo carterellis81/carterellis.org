@@ -6,47 +6,31 @@
         <meta name="viewport" content="width=device-width" />
         <title>Carter Ellis!</title>
         <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/thumbsup.png')}}">
-        <link rel="stylesheet" href="static/styles/index.css" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
 
         <!-- fonts from google fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet" />  
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond" rel="stylesheet" />
 
-        <!-- attempt at apple metadata -->
+        <!-- apple metadata -->
         <meta property="og:image" content="static/images/thumbsup.png" />
         <meta property="og:title" content="Carter Ellis' personal site!" />
         <meta property="og:image:width" content="500" />
         <meta property="og:image:height" content="500" />
 
+        <!-- importing styles -->
+        <link rel="stylesheet" href="static/styles/index.css" />
+        <link rel="stylesheet" href="static/styles/include.css" />
+
         <!-- importing scripts -->
-        <script src="static/scripts/index.js" defer></script> 
+        <script src="static/scripts/include.js" defer></script>
+        <script src="static/scripts/index.js" defer></script>
+
+        <!-- importing images -->
+        <link rel="preload" href="static/images/cellislogo.svg" as="image" type="image/svg+xml" />
     </head>
     <body>
-        <header>
-            <div id="HEADEROPTIONS">
-                <a href="https://www.carterellis.org" class="headerlogo">
-                    <img src="{{url_for('static', filename='images/cellislogo.svg')}}" alt="logo for carterellis.org"/>
-                </a>
-                <a href="minecraft" class="headeroption">
-                    minecraft
-                </a>
-                <a href="tools" class="headeroption">
-                    tools
-                </a>
-                <a href="seizure" class="headeroption">
-                    epilepsy?
-                </a>
-                <a href="seizure" class="headeroption">
-                    test?
-                </a>
-                <a href="seizure" class="headeroption">
-                    test2?
-                </a>
-                <div class="headerbuffer"></div>
-            </div>
-        </header>
-        <div id="TITLE">
+        <div id="title">
             <h1> carter ellis </h1>
         </div>
         <div id="BANNER">
@@ -127,19 +111,5 @@
                 </aside>
             </div>
         </main>
-        <footer>
-            <p>
-                this site was created by carter ellis
-            </p>
-            <p>
-                access the source code on my
-                 <a href="https://github.com/carterellis81/carterellis.org" title="link to GitHub" target="_blank" rel="noopener noreferrer">
-                    github 
-                </a>
-            </p>
-            <p>
-                2024
-            </p>
-        </footer>
     </body>
 </html>

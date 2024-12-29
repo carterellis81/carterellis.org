@@ -1,4 +1,4 @@
-const title = document.getElementById("TITLE");
+const title = document.getElementById("title");
 
 let textSplashes = [];
 

@@ -20,4 +20,8 @@ def old_home():
 def canvas():
     return render_template('canvas.html')
 
-serve(app, port=5000)
+@app.route('/pictures')
+def pictures():
+    return render_template('pictures.html')
+
+serve(app, port=5000, threads=10)
