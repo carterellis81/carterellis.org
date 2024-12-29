@@ -9,7 +9,7 @@
     background: linear-gradient(54deg, rgba(251,230,63,0.5644258045014881) 0%, rgba(173,70,252,1) 100%); 
 }
 
-#BANNER {
+#banner {
     height: 2.5em;
     width: 100%;
     display: grid;
@@ -116,7 +116,7 @@ aside {
     }   
 
     #asidecontainer {
-        display: none;
+        margin: 0rem 0.4rem 0.75rem 0.4rem;
     }
 
     #articlecontainer {

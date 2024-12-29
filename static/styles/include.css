@@ -93,6 +93,10 @@ footer > p {
 }
 
 @media screen and (0px <= width <= 599px) {
+    html {
+        font-size: 16px;
+    }
+
     #headerlogo {
         min-width: 7rem;
     }
