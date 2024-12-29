@@ -24,4 +24,9 @@ def canvas():
 def pictures():
     return render_template('pictures.html')
 
+#return 404 page
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
 serve(app, port=5000, threads=10)
