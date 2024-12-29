@@ -17,11 +17,11 @@ function changeTextSplash() {
         return;
     }
     let num = getRandomInt(0, Math.ceil(textSplashes.length + 3));
-    if ((num <= textSplashes.length - 1) && !(title.innerHTML.includes(textSplashes[num]))) {
+    if ((num <= textSplashes.length - 1) && !(title.innerHTML.includes(textSplashes[num])) && (textSplashes.length >= 1)) {
         title.innerHTML = "<h1> carter ellis:</br> <span style='color: rgb(168, 25, 25);'>" + textSplashes[num] + "</span> </h1>";
         textSplashes.splice(num, 1);
     }
-    else if ((num <= textSplashes.length - 1)) {
+    else if ((num <= textSplashes.length - 1) && (textSplashes.length >= 1)) {
         changeTextSplash();
         textSplashes.splice(num, 1);
     }
