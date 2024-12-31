@@ -7,6 +7,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy in the source code
 COPY . ./
+
+RUN flask --app app/main.py init-db
+
 EXPOSE 5000
 
 CMD [ "python", "app/main.py" ]

@@ -48,6 +48,9 @@ def create_app(test_config=None):
     
     import db
     db.init_app(app)
+
+    import blueprints.auth as auth
+    app.register_blueprint(auth.bp)
     
     return app
 

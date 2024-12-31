@@ -1,118 +1,107 @@
-<!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <!-- metadata -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>Home | carterellis.org</title>
-        <link rel="icon" type="image/x-icon" href="static/images/pagelogo.svg">
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
+{% extends "common/base.html" %}
 
-        <!-- fonts from google fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet" />  
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond" rel="stylesheet" />
+<!-- setting metadata -->
+{% block title %}
+Home | carterellis.org
+{% endblock %}
 
-        <!-- apple metadata -->
-        <meta property="og:image" content="static/images/pagelogo.svg" />
-        <meta property="og:title" content="Home | carterellis.org" />
-        <meta property="og:image:width" content="500" />
-        <meta property="og:image:height" content="500" />
+<!-- importing styles -->
+{% block styles %}
+<link rel="stylesheet" href="static/styles/index.css" />
+{% endblock %}
 
-        <!-- importing styles -->
-        <link rel="stylesheet" href="static/styles/index.css" />
-        <link rel="stylesheet" href="static/styles/include.css" />
+<!-- importing scripts -->
+{% block scripts %}
+<script src="static/scripts/index.js" defer></script>
+{% endblock %}
 
-        <!-- importing scripts -->
-        <script src="static/scripts/include.js" defer></script>
-        <script src="static/scripts/index.js" defer></script>
 
-        <!-- importing images -->
-        <link rel="preload" href="static/images/cellislogo.svg" as="image" type="image/svg+xml" />
-    </head>
-    <body>
-        <div id="title">
-            <h1> carter ellis </h1>
-        </div>
-        <div id="banner">
-            welcome to carterellis.org
-        </div>
-        <main>
-            <div id="articlecontainer">
-                <article>
-                    <h2>
-                        This is the personal website of me, Carter Ellis! 
-                    </h2>
-                    <p>
-                        I am still developing this site and a few other somewhat-related things,
-                        so make sure to regulary check back here to see what's going on.
-                        Thanks for coming here in the first place, by the way.
-                        Right now, <a href="" style="text-decoration: none;">carterellis.org</a> is mostly 
-                        barren, but you can find a list of future features below:
-                    </p>
-                    <dl>
-                        <dt>
-                            the Carter Ellis Wiki
-                        </dt>
-                        <dd>
-                            a system of pages where you can find a bunch of information
-                            about a bunch of random things that I feel like including.
-                            Also potentially to be used to store files that I want to keep
-                            and don't trust Google to protect.
-                        </dd>
-                    </br>
-                        <dt>
-                            IEEE Citation Helper
-                        </dt>
-                        <dd>
-                            this is an actually useful app that is under development.
-                            IEEE citations are annoying, and my least favorite part is 
-                            having to correctly order the citations at the end of the paper,
-                            because putting them in chronological order is annoying. <a href="" style="text-decoration: none;">carterellis.org</a>
-                            will soon have a page where you can upload a PDF of a completed paper 
-                            with the citations in any order and have the site automatically
-                            order the citations page for you. 
-                        </dd>
-                    </br>
-                        <dt>
-                            Minecraft server management page
-                        </dt>
-                        <dd>
-                            I'm also developing a Docker image for running a Fabric Minecraft server
-                            that will work with Geyser and Floodgate, and this page will allow players to 
-                            connect to it by adding them to the whitelist and also contain information 
-                            about how to operate similar Minecraft servers.
-                        </dd>
-                    </br>
-                        <dt>
-                            <a href="" style="text-decoration: none;">carterellis.org</a> hosting?
-                        </dt>
-                        <dd>
-                            eventually, I want to be able to host other people's static sites 
-                            (like <a href="https://cisc106.carterellis.org" style="text-decoration: none;">
-                                my cisc106 final project</a>) through this domain. By "people" I mean 
-                            my friends so if you're interested hit me up
-                        </dd>
-                    </dl>
-                    <p>
-                        Let me know if you have any ideas for this site! 
-                        I bought this domain for seven dollars at one in the morning,
-                        so I don't exactly have an amazing idea of what to do here. Have a great day!
-                    </p>
-                </article>
-            </div>
-            <div id="asidecontainer">
-                <aside>
-                    <h2>
-                        COOL PICTURES 
-                    </h2>
-                    <img src="{{url_for('static', filename='images/thumbsup.png')}}" alt="a pretty Cool Guy" class="bodyimage"/>
-                    <img src="{{url_for('static', filename='images/socialcredit.jpg')}}" alt="social credit VERY GOOD!" class="bodyimage"/>
-                    <img src="{{url_for('static', filename='images/motorcycle.jpg')}}" alt="another Cool Guy" class="bodyimage"/>
-                    <p>
-                        See more in the <a href="pictures" style="text-decoration: none;">image gallery</a>!
-                    </p>
-                </aside>
-            </div>
-        </main>
-    </body>
-</html>
+
+{% block content %}
+
+<div id="title">
+    <h1> carter ellis </h1>
+</div>
+<div id="banner">
+    welcome to carterellis.org
+</div>
+<main>
+    <div id="articlecontainer">
+        <article>
+            <h2>
+                This is the personal website of me, Carter Ellis! 
+            </h2>
+            <p>
+                I am still developing this site and a few other somewhat-related things,
+                so make sure to regulary check back here to see what's going on.
+                Thanks for coming here in the first place, by the way.
+                Right now, <a href="" style="text-decoration: none;">carterellis.org</a> is mostly 
+                barren, but you can find a list of future features below:
+            </p>
+            <dl>
+                <dt>
+                    the Carter Ellis Wiki
+                </dt>
+                <dd>
+                    a system of pages where you can find a bunch of information
+                    about a bunch of random things that I feel like including.
+                    Also potentially to be used to store files that I want to keep
+                    and don't trust Google to protect.
+                </dd>
+            </br>
+                <dt>
+                    IEEE Citation Helper
+                </dt>
+                <dd>
+                    this is an actually useful app that is under development.
+                    IEEE citations are annoying, and my least favorite part is 
+                    having to correctly order the citations at the end of the paper,
+                    because putting them in chronological order is annoying. <a href="" style="text-decoration: none;">carterellis.org</a>
+                    will soon have a page where you can upload a PDF of a completed paper 
+                    with the citations in any order and have the site automatically
+                    order the citations page for you. 
+                </dd>
+            </br>
+                <dt>
+                    Minecraft server management page
+                </dt>
+                <dd>
+                    I'm also developing a Docker image for running a Fabric Minecraft server
+                    that will work with Geyser and Floodgate, and this page will allow players to 
+                    connect to it by adding them to the whitelist and also contain information 
+                    about how to operate similar Minecraft servers.
+                </dd>
+            </br>
+                <dt>
+                    <a href="" style="text-decoration: none;">carterellis.org</a> hosting?
+                </dt>
+                <dd>
+                    eventually, I want to be able to host other people's static sites 
+                    (like <a href="https://cisc106.carterellis.org" style="text-decoration: none;">
+                        my cisc106 final project</a>) through this domain. By "people" I mean 
+                    my friends so if you're interested hit me up
+                </dd>
+            </dl>
+            <p>
+                Let me know if you have any ideas for this site! 
+                I bought this domain for seven dollars at one in the morning,
+                so I don't exactly have an amazing idea of what to do here. Have a great day!
+            </p>
+        </article>
+    </div>
+    <div id="asidecontainer">
+        <aside>
+            <h2>
+                COOL PICTURES 
+            </h2>
+            <img src="{{url_for('static', filename='images/thumbsup.png')}}" alt="a pretty Cool Guy" class="bodyimage"/>
+            <img src="{{url_for('static', filename='images/socialcredit.jpg')}}" alt="social credit VERY GOOD!" class="bodyimage"/>
+            <img src="{{url_for('static', filename='images/motorcycle.jpg')}}" alt="another Cool Guy" class="bodyimage"/>
+            <p>
+                See more in the <a href="pictures" style="text-decoration: none;">image gallery</a>!
+            </p>
+        </aside>
+    </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- metadata -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{% block title %} Test | carterellis.org {% endblock %}</title>
+        {% block icon %} <link rel="icon" type="image/x-icon" href="static/images/pagelogo.svg"> {% endblock %}
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+        <!-- fonts from google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet" />  
+        {% block fonts %} {% endblock %}
+
+        <!-- apple metadata -->
+        <meta property="og:image" content="static/images/pagelogo.svg" />
+        <meta property="og:title" content="{{ self.title() }}" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="500" />
+
+        <!-- importing styles -->
+        <link rel="stylesheet" href="static/styles/include.css" />
+        {% block styles %} {% endblock %}
+
+        <!-- importing scripts -->
+         {% block scripts %} {% endblock %}
+    </head>
+    <body>
+        {% block header %}
+        <header>
+            <div id="headeroptions">
+                <a href="." id="headerlogo">
+                    <img src="static/images/cellislogo.svg" alt="logo" />
+                </a>
+                <a href="minecraft" class="headeroption">
+                    minecraft
+                </a>
+                <a href="tools" class="headeroption">
+                    tools
+                </a>
+                <a href="seizure" class="headeroption">
+                    epilepsy
+                </a>
+                <a href="pictures" class="headeroption">
+                    gallery
+                </a>
+                <a href="seizure" class="headeroption">
+                    test
+                </a>
+                <div class="headerbuffer"></div>
+            </div>
+        </header>
+        {% endblock %}
+
+        {% block content %} {% endblock %}
+
+        {% block footer %}
+        <footer>
+            <p>
+                this site was created by carter ellis
+            </p>
+            <p>
+                access the source code on my
+                <a href="https://github.com/carterellis81/carterellis.org" title="link to GitHub" target="_blank" rel="noopener noreferrer">
+                    github 
+                </a>
+            </p>
+            <p>
+                copyright 2024 (not that any rights are reserved)
+            </p>
+        </footer>
+        {% endblock %}
+    </body>

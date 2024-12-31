@@ -1,68 +1,54 @@
-<!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <!-- metadata -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>Gallery | carterellis.org</title>
-        <link rel="icon" type="image/x-icon" href="static/images/pagelogo.svg">
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
+{% extends "common/base.html" %}
 
-        <!-- fonts from google fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet" />  
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond" rel="stylesheet">
+<!-- setting metadata -->
+{% block title %}
+Gallery | carterellis.org
+{% endblock %}
 
-        <!-- attempt at apple metadata -->
-        <meta property="og:image" content="static/images/pagelogo.svg" />
-        <meta property="og:title" content="Gallery | carterellis.org" />
-        <meta property="og:image:width" content="500" />
-        <meta property="og:image:height" content="500" />
+<!-- importing styles -->
+{% block styles %}
+<link rel="stylesheet" href="static/styles/pictures.css" />
+{% endblock %}
 
-        <!-- importing styles -->
-        <link rel="stylesheet" href="static/styles/pictures.css" />
-        <link rel="stylesheet" href="static/styles/include.css" />
+{% block content %}
 
-        <!-- importing scripts -->
-        <script src="static/scripts/include.js" defer></script> 
-    </head>
-    <body>
-        <div id="title">
-            <h1> Carter Ellis Photo Gallery </h1>
-        </div>
-        <div id="banner">
-            more coming soon
-        </div>
-        <main>
-            <div class="imagewrapper">
-                <img src="static/images/thumbsup.png" alt="a pretty Cool Guy" class="image"/>
-                <p>
-                    image description
-                </p>
-            </div>
-            <div class="imagewrapper">
-                <img src="static/images/socialcredit.jpg" alt="a pretty Cool Guy" class="image"/>
-                <p>
-                    image description
-                </p>
-            </div>
-            <div class="imagewrapper">
-                <img src="static/images/motorcycle.jpg" alt="a pretty Cool Guy" class="image"/>
-                <p>
-                    image description
-                </p>
-            </div>
-            <div class="imagewrapper">
-                <img src="static/images/thumbsup.png" alt="a pretty Cool Guy" class="image"/>
-                <p>
-                    image description
-                </p>
-            </div>
-            <div class="imagewrapper">
-                <img src="static/images/thumbsup.png" alt="a pretty Cool Guy" class="image"/>
-                <p>
-                    image description
-                </p>
-            </div>
-        </main>
-    </body>
-</html>
+<div id="title">
+    <h1> Carter Ellis Photo Gallery </h1>
+</div>
+<div id="banner">
+    more coming soon
+</div>
+<main>
+    <div class="imagewrapper">
+        <img src="static/images/thumbsup.png" alt="a pretty Cool Guy" class="image"/>
+        <p>
+            image description
+        </p>
+    </div>
+    <div class="imagewrapper">
+        <img src="static/images/socialcredit.jpg" alt="a pretty Cool Guy" class="image"/>
+        <p>
+            image description
+        </p>
+    </div>
+    <div class="imagewrapper">
+        <img src="static/images/motorcycle.jpg" alt="a pretty Cool Guy" class="image"/>
+        <p>
+            image description
+        </p>
+    </div>
+    <div class="imagewrapper">
+        <img src="static/images/thumbsup.png" alt="a pretty Cool Guy" class="image"/>
+        <p>
+            image description
+        </p>
+    </div>
+    <div class="imagewrapper">
+        <img src="static/images/thumbsup.png" alt="a pretty Cool Guy" class="image"/>
+        <p>
+            image description
+        </p>
+    </div>
+</main>
+
+{% endblock %}
