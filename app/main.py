@@ -1,13 +1,8 @@
 import os
 
-import _sqlite3
-from datetime import datetime
-import click
-
 from waitress import serve
 from flask import Flask
 from flask import render_template
-from flask import current_app, g
 
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
@@ -50,6 +45,9 @@ def create_app(test_config=None):
     @app.errorhandler(404)
     def page_not_found(e):
         return render_template('404.html'), 404
+    
+    import db
+    db.init_app(app)
     
     return app
 
