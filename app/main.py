@@ -58,4 +58,4 @@ def create_app(test_config=None):
     
     return app
 
-#serve(create_app(), port=5000, threads=10)
+serve(create_app(), port=5000, threads=10)
