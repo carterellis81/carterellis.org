@@ -41,6 +41,10 @@ def create_app(test_config=None):
     def pictures():
         return render_template('pictures.html')
 
+    @app.route('/test')
+    def testauth():
+        return render_template('auth/register.html')
+
     #return 404 page
     @app.errorhandler(404)
     def page_not_found(e):
@@ -54,4 +58,4 @@ def create_app(test_config=None):
     
     return app
 
-serve(create_app(), port=5000, threads=10)
+#serve(create_app(), port=5000, threads=10)
