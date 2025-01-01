@@ -1,0 +1,50 @@
+{% extends "common/base.html" %}
+
+<!-- setting metadata -->
+{% block title %}
+Create Account | carterellis.org
+{% endblock %}
+
+<!-- importing styles -->
+{% block styles %}
+<link rel="stylesheet" href="static/styles/register.css" />
+{% endblock %}
+
+<!-- importing fonts -->
+{% block fonts %}
+<link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
+{% endblock %}
+
+<!-- importing scripts -->
+{% block scripts %}
+<script src="static/scripts/register.js" defer></script>
+{% endblock %}
+
+{% block content %}
+<main>
+    <div id="background">
+        <div id="registerform">
+            <p>
+                Register a new Ellis account
+            </p>
+            <form action="/auth/register" method="post">
+                <div class="inputbox">
+                    <input type="text" name="username" placeholder="username">
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="password" placeholder="password">
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="confirm" placeholder="confirm password">
+                </div>
+                <div id="alertbox">
+                </div>
+                <div id="buttonbox">
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+{% endblock %}
+
+{% block footer %} {% endblock %}

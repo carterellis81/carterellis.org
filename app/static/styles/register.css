@@ -1,0 +1,63 @@
+#background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100lvh;
+    background: rgb(63,251,103);
+    background: linear-gradient(21deg, rgba(63,251,103,1) 0%, rgba(70,129,252,0.8773109585631127) 100%); 
+}
+
+#registerform {
+    font-family: "Lato";
+    box-sizing: border-box;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background: #292933;
+    border-radius: 1rem;
+}
+
+p {
+    text-align: center;
+    margin: 0px 0px 1rem 0px;
+    padding: 0px;
+}
+
+.inputbox {
+    box-sizing: border-box;
+    margin: 0.5rem 0px 1rem 0px;
+}
+
+input {
+    box-sizing: border-box;
+    color: #fefefe;
+    background-color: #444450;
+    border: black;
+    border-radius: 0.2rem;
+    height: 1.4rem;
+    width: 100%;
+    padding: 0px 0.5rem 0px 0.5rem;
+}
+
+input[type='text'] {
+    font-size: 0.8rem;
+    font-family: "Lato";
+}
+
+#alertbox {
+    box-sizing: border-box;
+    height: 3rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonbox {
+    box-sizing: border-box;
+    height: 1.5rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
